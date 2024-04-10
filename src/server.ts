@@ -16,9 +16,9 @@ let server: Server;
 
 async function bootstrap() {
   try {
-    await RedisClient.connect().then(() => {
-      subscribeToEvents()
-    });
+    // await RedisClient.connect().then(() => {
+    //   subscribeToEvents()
+    // });
 
 
     await mongoose.connect(config.database_url as string);
